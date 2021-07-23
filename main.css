@@ -61,18 +61,19 @@ li a:hover {
     text-align: center;
   }
   
-  /* When you mouse over the container, fade in the overlay title */
-  .container:hover .overlay {
-    opacity: 1;
-  }
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
 
-  /* Container needed to position the overlay. Adjust the width as needed */
+/* Container needed to position the overlay. Adjust the width as needed */
 .container {
     position: relative;
     width: 100%;
     max-width: 100%;
   }
-  
+
+/* Profile photo */
 .profilePhoto {
     border-radius: 50%;
     height: 20%;
@@ -81,3 +82,32 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+  width: 15%;
+  border-color: turquoise;
+}
+
+/* Projects Table*/
+.projectsTable {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Projects Images*/
+.projectImages {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
