@@ -4,8 +4,10 @@ https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox
 
 /* Style the header */
 header {
-    background-color: #666;
-    padding: 30px;
+    background-image: url("https://fusion.deakin.edu.au/themes/deakin/images/fusion/deakin_stacked_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
     text-align: center;
     font-size: 35px;
     color: white;
@@ -67,7 +69,15 @@ li a:hover {
   /* Container needed to position the overlay. Adjust the width as needed */
 .container {
     position: relative;
-    width: 50%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 100%;
   }
   
+.profilePhoto {
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
