@@ -6,6 +6,7 @@
     * References:
     * - https://www.w3schools.com/html/
     * - https://www.w3schools.com/css/css_navbar.asp
+    * - https://blog.hubspot.com/marketing/jump-link-same-page
  -->
 <head>
 <title>Portfolio - Asrin Dayananda </title>
@@ -14,9 +15,9 @@
 <body>
     <nav>
         <ul>
-            <li><a href="default.asp">About</a></li>
-            <li><a href="news.asp">Work</a></li>
-            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="#ABOUT">About</a></li>
+            <li><a href="#WORK">Work</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </nav>
     <header>
@@ -25,13 +26,15 @@
         </div>
     </header>
     <section>
+        <a id="ABOUT"></a>
         <article>
             <img class="profilePhoto" src="https://media-exp1.licdn.com/dms/image/C5603AQGa7LX4CM0Qfw/profile-displayphoto-shrink_800_800/0/1569416128740?e=1632355200&v=beta&t=Q0oMRCJp1nO1dCgUpsAnn5XBzYbJymYGUI4ga_391fY" alt="Asrin Dayananda">
             <p style="text-align: center;">I am a full-stack web developer based in South East England, United Kingdom</p>
         </article>
     </section>
-    <hr class="solid">
     <section>
+        <hr class="solid">
+        <a id="WORK"></a>
         <article>
             <h2 style="text-align: center;">Here's what I've done so far</h2>
             <div class="projects">
@@ -42,17 +45,36 @@
                         </td>
                         <td>
                           Code blogging website
+                          <br>                          
+                          <a href="https://azcodez.com/">Azcodez.com</a>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="projectImages" src="https://chairmansbarbershop.com.au/wp-content/uploads/2020/10/ChairmansBarberShop_Logo.png" alt="ChairmansBarberShop">
+                            <img class="chairmansImage" src="https://chairmansbarbershop.com.au/wp-content/uploads/2020/10/ChairmansBarberShop_Logo.png" alt="ChairmansBarberShop">
                         </td>
                         <td>
                           Barber shop website
+                          <br>
+                          <a href="https://www.chairmansbarbershop.com.au/">ChairmansBarbershop.com</a>
                         </td>
                     </tr>
                   </table>
+            </div>
+        </article>
+    </section>
+    <section>
+        <hr class="solid">
+        <article>
+            <h2 style="text-align: center;">My Photos</h2>
+            <div class="projects">
+                <img class="responsiveImages" src="https://azcodez.com/images/150633b813614aa8b24cd8459fcf0b21.png" alt="AzCodez">
+                <img class="responsiveImages" src="https://azcodez.com/images/il_1588xN.3128980727_ps7i.jpg" alt="Cap">
+                <img class="responsiveImages" src="https://azcodez.com/images/5f9c9c00740569d1a4ca2f4c2.jpg" alt="Code">
+                <img class="responsiveImages" src="https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes.jpg" alt="codingMeme">
+                <img class="responsiveImages" src="https://azcodez.com/images/150633b813614aa8b24cd8459fcf0b21.png" alt="AzCodez">
+                <img class="responsiveImages" src="https://azcodez.com/images/150633b813614aa8b24cd8459fcf0b21.png" alt="AzCodez">
+                <img class="responsiveImages" src="https://azcodez.com/images/150633b813614aa8b24cd8459fcf0b21.png" alt="AzCodez">
             </div>
         </article>
     </section>
