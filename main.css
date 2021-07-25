@@ -34,7 +34,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
 }
 
 li {
@@ -43,18 +43,18 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: teal;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 li a:hover {
-  background-color: #111;
+  background-color: white;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
-    position: absolute;
+    position: bottom;
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
@@ -131,7 +131,11 @@ hr.solid {
 
 /* Responsive images for photo gallery */
 .responsiveImages{
-  display: block;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.spacer{
+  padding: 20px;
 }
