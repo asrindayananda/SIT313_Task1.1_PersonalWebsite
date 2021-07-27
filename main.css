@@ -36,11 +36,9 @@ ul {
   overflow: hidden;
   background-color: white;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: teal;
@@ -52,12 +50,12 @@ li a:hover {
   background-color: white;
 }
 
-/* The overlay effect - lays on top of the container and over the image */
+/* Hover over image effect */
 .overlay {
     position: bottom;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -66,13 +64,11 @@ li a:hover {
     font-size: 20px;
     padding: 20px;
     text-align: center;
-  }
-  
+  }  
 /* When you mouse over the container, fade in the overlay title */
 .container:hover .overlay {
   opacity: 1;
 }
-
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
     position: relative;
@@ -90,14 +86,14 @@ li a:hover {
     margin-right: auto;
   }
 
-/* Solid border */
+/* Solid teal short border spacer */
 hr.solid {
   border-top: 3px solid #bbb;
   width: 15%;
   border-color: turquoise;
 }
 
-/* Projects Table*/
+/* Projects Table */
 .projectsTable {
   margin-left: auto;
   margin-right: auto;
@@ -121,8 +117,7 @@ hr.solid {
   margin-right: auto;
 }
 
-
-/* Projects Div*/
+/* Projects Divider*/
 .projects {
   display: block;
   margin-left: auto;
@@ -136,6 +131,7 @@ hr.solid {
   margin-right: auto;
 }
 
+/* Soace to separate between sections */
 .spacer{
   padding: 20px;
 }
