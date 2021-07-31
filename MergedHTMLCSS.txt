@@ -1,0 +1,236 @@
+index.html
+
+<!DOCTYPE html>
+<html>
+<!--
+    * Asrin Dayananda
+    * SIT313 Developing Client-Server Web Applications
+    * References:
+    * https://www.w3schools.com/html/
+    * https://www.w3schools.com/css/css_navbar.asp
+    * https://blog.hubspot.com/marketing/jump-link-same-page
+    * SIT313 Developing Client-Server Web Applications Content resources
+ -->
+<head>
+<title>Portfolio - Asrin Dayananda </title>
+<link rel="stylesheet" href="main.css" media="screen">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#ABOUT">About</a></li>
+            <li><a href="#WORK">Work</a></li>
+            <li><a href="mailto:adayanan@deakin.edu.au">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+        <div class="overlay">Hey, I'm Asrin</div>
+        </div>
+    </header>
+
+    <section>
+        <a id="ABOUT"></a>
+        <article>
+            <img class="profilePhoto" src="https://media-exp1.licdn.com/dms/image/C5603AQGa7LX4CM0Qfw/profile-displayphoto-shrink_800_800/0/1569416128740?e=1632355200&v=beta&t=Q0oMRCJp1nO1dCgUpsAnn5XBzYbJymYGUI4ga_391fY" alt="Asrin Dayananda">
+            <p style="text-align: center;">I am a full-stack web developer based in South East England, United Kingdom</p>
+        </article>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <hr class="solid">
+        <div class="spacer"></div>
+        <a id="WORK"></a>
+        <article>
+            <h2 style="text-align: center;">Here's what I've done so far</h2>
+            <div class="projects">
+                <table class="projectsTable">
+                    <tr>
+                        <td>
+                            <img class="projectImages" src="https://azcodez.com/images/150633b813614aa8b24cd8459fcf0b21.png" alt="AzCodez">
+                        </td>
+                        <td>
+                          Code blogging website
+                          <br>                          
+                          <a href="https://azcodez.com/">Azcodez.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="chairmansImage" src="https://chairmansbarbershop.com.au/wp-content/uploads/2020/10/ChairmansBarberShop_Logo.png" alt="ChairmansBarberShop">
+                        </td>
+                        <td>
+                          Barber shop website
+                          <br>
+                          <a href="https://www.chairmansbarbershop.com.au/">ChairmansBarbershop.com</a>
+                        </td>
+                    </tr>
+                  </table>
+            </div>
+        </article>
+    </section>
+    
+    <section>
+        <div class="spacer"></div>
+        <hr class="solid">
+        <div class="spacer"></div>
+        <article>
+            <h2 style="text-align: center;">My Photos</h2>
+            <div style="text-align: center;">
+                <img class="responsiveImages" src="./images/chairmansScreenshot.jpg" alt="AzCodez">
+                <img class="responsiveImages" src="./images/chairmansScreenshot2.jpg" alt="Cap">
+                <img class="responsiveImages" src="./images/azCodezScreenshot.jpg" alt="Code">
+                <img class="responsiveImages" src="./images/azCodezScreenshot2.jpg" alt="codingMeme">
+                <img class="responsiveImages" src="./images/azCodezScreenshot3.jpg" alt="AzCodez">
+            </div>
+        </article>
+        <div class="spacer"></div>
+    </section>
+
+</body>
+</html>
+
+main.css
+
+/* 
+<!--
+    * Asrin Dayananda
+    * SIT313 Developing Client-Server Web Applications
+    * References:
+    * https://www.w3schools.com/html/
+    * https://www.w3schools.com/css/css_navbar.asp
+    * https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox
+ -->
+*/
+
+/* Style the header */
+header {
+    background-image: url("https://fusion.deakin.edu.au/themes/deakin/images/fusion/deakin_stacked_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+li {
+    display: inline;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: teal;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+}
+
+/* Hover over image effect */
+.overlay {
+    position: bottom;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }  
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+/* Profile photo */
+.profilePhoto {
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Solid teal short border spacer */
+hr.solid {
+  border-top: 3px solid #bbb;
+  width: 15%;
+  border-color: turquoise;
+}
+
+/* Projects Table */
+.projectsTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Projects Images*/
+.projectImages {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Projects Images*/
+.chairmansImage {
+  display: block;
+  height: 200px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Projects Divider*/
+.projects {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive images for photo gallery */
+.responsiveImages{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Soace to separate between sections */
+.spacer{
+  padding: 20px;
+}
+
